@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: #deb887;
+    color: #000;
+}
+
+header{
+    font-weight: bold;
+    position: static;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;           /* come back to set the header text well later*/
+}
+
+header span{
+    font-size: 1.4rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #deb887;
+}
+
+nav.open{
+    max-height: 300px;
+    width: 100%;
+}
+
+
+nav a{
+    flex: 1;
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #b8860b;
+}
+
+h1{
+    text-align: center;
+    margin: 30px auto 10px auto;
+    font-size: 1rem;
+}
+
+figure img{
+    width: 100%;
+    max-width: 100%;
+}
+
+figcaption{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+
+#hamburger{
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: auto;
+    padding: 5px 10px;
+}

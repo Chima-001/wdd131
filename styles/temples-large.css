@@ -1,0 +1,42 @@
+@media screen and (min-width: 500px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header span{
+        padding: 15px 20px;
+        font-size: 3.5rem;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        max-height: none;
+        overflow: visible;
+        justify-content: space-between;
+        flex: 1;
+        margin-left: 5rem;
+    }
+
+    nav a{
+        flex: 1;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    
+    
+    h1{
+        grid-column: 1/-1;
+        margin: 50px auto auto auto;
+        font-size: 1.7rem;
+    }
+
+    #hamburger{
+        display: none;
+    }
+    
+}
