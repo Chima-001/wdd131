@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Paris, France</title>
+    <meta name="description"
+        content="Discover Paris, France — the city of lights. Explore key facts, weather conditions, and the iconic Eiffel Tower.">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Paris, France</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/eiffel-tower-large.webp">
+            <img src="images/eiffel-tower-small.webp" alt="A close-up view of the Eiffel Tower, Paris, France" width="480" height="719">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th><td>105 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population:</th><td>2,161,000</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th><td>Paris</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th><td>French</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th><td>Euro (€)</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th><td>UTC+1</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th><td>+33</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th><td>.fr</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/rainy-1.svg" alt="Cloudy and rainy weather icon" class="weather-icon">
+            <table>
+                <tr>
+                    <th>Temperature:</th><td>10 ℃</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th><td>Rainy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th><td>5 km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th><td id="wind-chill"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Chimamkpam Nnaji | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
