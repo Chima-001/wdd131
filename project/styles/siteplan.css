@@ -97,6 +97,8 @@ h3 {
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -105,6 +107,7 @@ h3 {
     font-size: 0.85rem;
     background: var(--background);
     margin: 0;
+    flex: 1;
 }
 
 .box {
@@ -175,6 +178,27 @@ section ul li {
     color: var(--cyan);
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+}
+
+.dark-background{
+    background:#0f172a;
+}
+
+.dark p{
+    border-top: 1px solid var(--surface);
+}
+.card-background{
+    background:#1e293b;
+}
+.accent-color{
+    background:#22d3ee;
+}
+
+.light-color{
+    background:#f8fafc;
+}
+.faded-color{
+    background:#b0bfce;
 }
 
 footer {
