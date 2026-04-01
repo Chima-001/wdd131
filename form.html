@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review | WDD 131 </title>
     <meta name="description"
-        content="Share your thoughts on products you have used and help others make better choices.">
+    content="Share your thoughts on products you have used and help others make better choices.">
     <meta name="author" content="Chimamkpam Nnaji">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -55,20 +56,20 @@
                     <label>Which features did you find useful? <span class="hint">Check all that
                             apply</span></label>
                     <div class="features-grid">
-                        <label class="feature">
+                        <label class="feature" for="feature1">
                             <input type="checkbox" id="feature1" name="features" value="Durability">
                             Durability
                         </label>
-                        <label class="feature">
+                        <label class="feature" for="feature2">
                             <input type="checkbox" id="feature2" name="features" value="Ease of Use">
                             Ease of Use
                         </label>
-                        <label class="feature">
+                        <label class="feature" for="feature3">
                             <input type="checkbox" id="feature3" name="features" value="Performance">
                             Performance
                         </label>
-                        <label class="feature">
-                            <input type="checkbox" id="feature5" name="features" value="Design">
+                        <label class="feature" for="feature4">
+                            <input type="checkbox" id="feature4" name="features" value="Design">
                             Design
                         </label>
                     </div>
@@ -92,7 +93,6 @@
         <p>©<span id="currentyear"></span> | Chimamkpam Nnaji | Nigeria</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/form.js"></script>
 </body>
 
 </html>
