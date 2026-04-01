@@ -38,6 +38,8 @@ document.querySelectorAll('input[name="rating"]').forEach(input => {
     });
 
     input.addEventListener('change', () => {
-        input.setCustomValidity('');
+        document.querySelectorAll('input[name="rating"]').forEach(r => {
+            r.setCustomValidity('');
+        });
     });
 });
