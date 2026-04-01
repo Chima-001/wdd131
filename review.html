@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted | WDD 131</title>
+  <meta name="description" content="Thank you for submitting your product review.">
+  <meta name="author" content="Chimamkpam Nnaji">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+    <div class="review-card confirmation">
+      <div class="success-icon">&#10003;</div>
+      <h2>Thank You!</h2>
+      <p class="subtitle">Your review has been submitted successfully.<br>You will receive a reply in few days.</p>
+      <p class="tally">Total reviews submitted: <strong><span id="countReview">0</span></strong></p>
+      <a href="form.html" class="return-link">← Submit Another Review</a>
+    </div>
+  </main>
+  <footer>
+        <p>©<span id="currentyear"></span> | Chimamkpam Nnaji | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>

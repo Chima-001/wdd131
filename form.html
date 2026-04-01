@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review | WDD 131 </title>
+    <meta name="description"
+        content="Share your thoughts on products you have used and help others make better choices.">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="review-card">
+            <form method="get" action="review.html">
+                <div class="form-row">
+                    <label for="productName">Product Name*</label>
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="rating-label">Overall Rating*</label>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">&star;</label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        <label for="star4">&star;</label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        <label for="star3">&star;</label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        <label for="star2">&star;</label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <label for="star1">&star;</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="installationDate">Date of Installation*</label>
+                    <input type="date" id="installationDate" name="installationDate" required>
+                </div>
+                <div class="form-row">
+                    <label>Which features did you find useful? <span class="hint">Check all that
+                            apply</span></label>
+                    <div class="features-grid">
+                        <label class="feature">
+                            <input type="checkbox" id="feature1" name="features" value="Durability">
+                            Durability
+                        </label>
+                        <label class="feature">
+                            <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                            Ease of Use
+                        </label>
+                        <label class="feature">
+                            <input type="checkbox" id="feature3" name="features" value="Performance">
+                            Performance
+                        </label>
+                        <label class="feature">
+                            <input type="checkbox" id="feature5" name="features" value="Design">
+                            Design
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="review">Written Review <span class="hint">Optional</span></label>
+                    <textarea id="review" name="review" rows="5"
+                        placeholder="Share your experience..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="username">Your Name <span class="hint">Optional</span></label>
+                    <input type="text" id="username" name="username" placeholder="e.g. John Doe">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Post Review">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Chimamkpam Nnaji | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
