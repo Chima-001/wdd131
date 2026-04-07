@@ -97,8 +97,15 @@ function handleForm() {
                 const popup = document.getElementById('popup');
                 const popupMsg = document.getElementById('popup-msg');
                 const popupClose = document.getElementById('popup-close');
+                
+                function capitalizeWords(str){
+                    return str.toLowerCase()
+                    .split(/\s+/)
+                    .map(w => w ? w[0].toUpperCase() + w.slice(1) : '')
+                    .join(' ');
+                }
 
-                popupMsg.textContent = `Thanks ${name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()}! I'll get back to you shortly.`;
+                popupMsg.textContent = `Thanks ${capitalizeWords({name})}! I'll get back to you shortly.`;
                 popup.classList.add('show');
 
                 popupClose.addEventListener('click', () => {
