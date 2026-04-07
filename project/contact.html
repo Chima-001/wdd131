@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <meta name="description"
+        content="Chima Nnaji — software developer and engineering student in Nigeria. Building responsive, dynamic web apps. Available for freelance.">
+    <title>devnest.Chima — Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="devnest.Chima logo" />
+                <span>devnest.Chima</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div id="theme-bar">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="images/day.svg" alt="Animated day theme">
+        </button>
+    </div>
+    <main>
+        <section id="contact">
+            <div class="contact-info">
+                <h1>Get In Touch</h1>
+                <p>Whether you need a website built from scratch, have any project in mind and you want to collaborate
+                    or have a freelance opportunity — I'd love to hear from you. Drop a message and I'd get back to you
+                    promptly. Let's build something great together!</p>
+                <ul class="socials">
+                    <li><a href="https://github.com/Chima-001" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/chima-nnaji-1621523a3" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+                    <li><a href="mailto:cnnaji01@outlook.com" target="_blank" rel="noopener">Email</a></li>
+                    <li><a href="https://t.me/heischima1" target="_blank" rel="noopener">Telegram</a></li>
+                    <li><a href="https://x.com/_heisChima" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+                <div class="map">
+                    <iframe title="Google Maps location of Chima Nnaji"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.441419737896!2d7.491302774722698!3d9.05774389076909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a8c8b9b9b5%3A0x5c8c8c8c8c8c8c8!2sChimamkpam%20Nnaji%20Location!5e0!3m2!1sen!2sng!4v1700000000000"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Send Me a Message</legend>
+                    <div class="field">
+                        <label for="name">Name<span class="hint">required</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email<span class="hint">required</span></label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@outlook.com" required />
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject<span class="hint">required</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="Purpose of message" required />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="What do you have in mind?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="prm-button">Send Message</button>
+                </fieldset>
+                <p id="form-confirm"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Chimamkpam Nnaji | devnest.Chima | Nigeria</p>
+        <p><a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-box">
+            <p id="popup-msg"></p>
+            <button id="popup-close" class="prm-button">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>

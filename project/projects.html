@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <meta name="description"
+        content="Chima Nnaji — software developer and engineering student in Nigeria. Building responsive, dynamic web apps. Available for freelance.">
+    <title>devnest.Chima — Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="devnest.Chima logo" />
+                <span>devnest.Chima</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div id="theme-bar">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="images/day.svg" alt="Animated day theme">
+        </button>
+    </div>
+    <main>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="html">HTML</button>
+                <button class="filter-button" data-filter="css">CSS</button>
+                <button class="filter-button" data-filter="js">JavaScript</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-type="html css js">
+                    <img src="images/project8.webp" alt="Project 1 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>Lazy Loading</h2>
+                        <p>A demonstration of native browser lazy loading with CSS fade-from-black animation applied to
+                            images as they scroll into view.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd131/week04/lazyload.html" class="prm-button">Live
+                                Demo</a>
+                            <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-type="html css">
+                    <img src="images/project3.webp" alt="Project 2 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>Open Waters Rafting Site</h2>
+                        <p>A multi-page rafting company website built with HTML and CSS. Features a responsive layout,
+                            styled navigation, and a contact form.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd130/wwr/index.html" class="prm-button">Live Demo</a>
+                            <a href="https://github.com/Chima-001/wdd130" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-type="html css js">
+                    <img src="images/project6.webp" alt="Project 3 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>Product Review Form</h2>
+                        <p>A dynamic product review form built with HTML, CSS, and JavaScript. Features star rating,
+                            real-time input feedback, and DOM manipulation.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd131/form.html" class="prm-button">Live
+                                Demo</a>
+                            <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-type="css js">
+                    <img src="images/project5.webp" alt="Project 4 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>Temple Album</h2>
+                        <p>A responsive image gallery showcasing LDS temples worldwide. Includes a hamburger navigation,
+                            lazy loading, and category filtering.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd131/filtered-temples.html" class="prm-button">Live
+                                Demo</a>
+                            <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-type="html css js">
+                    <img src="images/project9.webp" alt="Project 5 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>Paris Place Page</h2>
+                        <p>An information page about Paris built with HTML, CSS, and JavaScript. Features a responsive
+                            screen-size
+                            layout and wind chill calculator.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd131/place.html" class="prm-button">Live Demo</a>
+                            <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-type="html css js">
+                    <img src="images/project10.webp" alt="Project 6 screenshot" loading="lazy" />
+                    <div class="project-info">
+                        <h2>devnest.Chima — Site Plan</h2>
+                        <p>A structured website planning document built with HTML and CSS. Covers site purpose, color
+                            schema, and wireframes for the website.</p>
+                        <div class="project-links">
+                            <a href="https://chima-001.github.io/wdd131/project/siteplan.html" class="prm-button">Live
+                                Demo</a>
+                            <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Chimamkpam Nnaji | devnest.Chima | Nigeria</p>
+        <p><a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

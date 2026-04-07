@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <meta name="description"
+        content="Chima Nnaji — software developer and engineering student in Nigeria. Building responsive, dynamic web apps. Available for freelance.">
+    <title>devnest.Chima — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="devnest.Chima logo.">
+                <span>devnest.Chima</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+    </header>
+    <div id="theme-bar">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="images/day.svg" alt="Animated day theme">
+        </button>
+    </div>
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Chimamkpam Nnaji</h1>
+                <p class="tagline">Software Developer / Engineer</p>
+                <p class="bio">I build clean, responsive web applications with a focus on functionality and user
+                    experience.
+                </p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="prm-button">View My Work</a>
+                    <a href="contact.html" class="outline-button">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="images/profile-picture.webp" alt="Chimamkpam Nnaji" width="300" loading="lazy" />
+            </div>
+        </section>
+        <section id="my-skills">
+            <h2>Skills</h2>
+            <div class="my-skills-wrap">
+                <div class="my-skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Semantic markup, responsive layouts, Flexbox, Grid, animations.</p>
+                </div>
+                <div class="my-skill-card">
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, events, arrays, objects, localStorage, ES6+.</p>
+                </div>
+                <div class="my-skill-card">
+                    <h3>Python</h3>
+                    <p>Scripting, OOP, file I/O, data structures.</p>
+                </div>
+                <div class="my-skill-card">
+                    <h3>C#</h3>
+                    <p>Object-oriented programming, inheritance, encapsulation, abstraction.</p>
+                </div>
+                <div class="my-skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, branching, GitHub Pages deployment.</p>
+                </div>
+                <div class="my-skill-card">
+                    <h3>AutoCAD</h3>
+                    <p>Technical drafting and design for freelance clients.</p>
+                </div>
+            </div>
+        </section>
+        <section id="featured">
+            <h2>Featured Project</h2>
+            <div class="project">
+                <img src="images/project11.webp" alt="Featured project screenshot" loading="lazy" />
+                <div class="project-info">
+                    <h3>Lazy Loading</h3>
+                    <p>A progressive image loading demonstration built with HTML, CSS, and JavaScript. Implements the
+                        native loading="lazy" attribute alongside a CSS fade-from-black animation, causing images to
+                        smoothly appear only as they enter viewport while scrolling. A key performance optimization
+                        technique for modern web pages.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://chima-001.github.io/wdd131/week04/lazyload.html" class="prm-button">Live
+                            Demo</a>
+                        <a href="https://github.com/Chima-001/wdd131" class="outline-button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Chimamkpam Nnaji | devnest.Chima | Nigeria</p>
+        <p><a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

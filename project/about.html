@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chimamkpam Nnaji">
+    <meta name="description"
+        content="Chima Nnaji — software developer and engineering student in Nigeria. Building responsive, dynamic web apps. Available for freelance.">
+    <title>devnest.Chima — About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="devnest.Chima logo" />
+                <span>devnest.Chima</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div id="theme-bar">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="images/day.svg" alt="Animated day theme">
+        </button>
+    </div>
+    <main>
+        <section id="about">
+            <div class="about-img">
+                <img src="images/profile-picture.webp" alt="Chimamkpam Nnaji" width="300" loading="lazy" />
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hi! 👋🏽 My name is Chima and I'm software developer and engineering student enrolled at BYU-Pathway
+                    Worldwide, building my craft from Nigeria. I started my tech journey through freelance web
+                    development and AutoCad drafting. That hands-on foundation shaped how I thinking about building
+                    things — practically, purposefully, and with attention to detail.</p>
+                <p>I enjoy building things that live on the internet — clean, functional, and accessible web
+                    applications that solve real problems. I'm working towards becoming a full-stack developer one
+                    project at a time while
+                    continuing to serve clients as a freelancer and keeping balance with other activities. When I'm not
+                    coding, I enjoy listening to music, hitting the gym, reading literature
+                    or thinking through logical problems.</p>
+                <a href="contact.html" class="prm-button contact-btn">Get In Touch</a>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education and Certification</h2>
+            <div class="edu">
+                <h3>BYU-Pathway Worldwide</h3>
+                <p>Software Development (B.Sc) — Currently enrolled</p>
+            </div>
+            <div class="edu">
+                <h3>freeCodeCamp.Org</h3>
+                <p>HTML, CSS, JavaScript and Python — Certified</p>
+            </div>
+            <div class="edu">
+                <h3>University of Nigeria, Nsukka</h3>
+                <p>Laws / Legal Studies (LL.B) — Currently enrolled</p>
+            </div>
+        </section>
+        <section id="stack">
+            <h2>Stack, Tools and Technologies</h2>
+            <ul class="stack-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>C#</li>
+                <li>Git & GitHub</li>
+                <li>AutoCAD</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Chimamkpam Nnaji | devnest.Chima | Nigeria</p>
+        <p><a href="references.html">References</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
