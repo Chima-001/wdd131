@@ -5,10 +5,17 @@ const navLinks = document.querySelector('nav ul');
 document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
 document.getElementById("currentyear").innerHTML = currentYear
 
+function capitalizeWords(str){
+    return str.toLowerCase()
+    .split(/\s+/)
+    .map(w => w ? w[0].toUpperCase() + w.slice(1) : '')
+    .join(' ');
+}
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("active");
     navLinks.classList.toggle('open');
-});
+});    
 
 function initThemeToggle() {
     const toggle = document.getElementById('theme-toggle');
@@ -18,7 +25,7 @@ function initThemeToggle() {
     if (saved === 'light') {
         document.body.classList.add('light-mode');
         icon.src = 'images/night.svg'
-    }
+    }    
     toggle.addEventListener('click', () => {
         console.log('clicked');
 
@@ -30,27 +37,27 @@ function initThemeToggle() {
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
             icon.src = isLight ? 'images/night.svg' : 'images/day.svg';
             icon.classList.remove('switching');
-        }, 300);
-    });
-}
+        }, 300);    
+    });    
+}    
 
 function filterProjects() {
-  const buttons = document.querySelectorAll('.filter-button');
+  const buttons = document.querySelectorAll('.filter-button');  
   const projects = Array.from(document.querySelectorAll('.projects-grid .project-card'));
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));  
       button.classList.add('active');
       const filter = button.dataset.filter;
       const matched = projects.filter(project => {
-        const types = project.dataset.type.split(' ');
+        const types = project.dataset.type.split(' ');  
         return filter === 'all' || types.includes(filter);
-      });
+      });  
       projects.forEach(project => project.classList.add('hidden'));
       matched.forEach(project => project.classList.remove('hidden'));
-    });
-  });
-}
+    });  
+  });  
+}  
 
 
 function handleForm() {
@@ -81,7 +88,7 @@ function handleForm() {
         if (!name || !email || !subject || !message) {
             alert('Please fill in all fields.');
             return;
-        }
+        }    
 
         const submission = {name, email, subject, message, date: new Date().toLocaleDateString()};
         localStorage.setItem('lastSubmission', JSON.stringify(submission));
@@ -98,13 +105,6 @@ function handleForm() {
                 const popupMsg = document.getElementById('popup-msg');
                 const popupClose = document.getElementById('popup-close');
                 
-                function capitalizeWords(str){
-                    return str.toLowerCase()
-                    .split(/\s+/)
-                    .map(w => w ? w[0].toUpperCase() + w.slice(1) : '')
-                    .join(' ');
-                }
-
                 popupMsg.textContent = `Thanks ${capitalizeWords({name})}! I'll get back to you shortly.`;
                 popup.classList.add('show');
 
