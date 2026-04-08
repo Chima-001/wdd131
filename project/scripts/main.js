@@ -5,12 +5,12 @@ const navLinks = document.querySelector('nav ul');
 document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
 document.getElementById("currentyear").innerHTML = currentYear
 
-function capitalizeWords(str){
+/*function capitalizeWords(str){
     return str.toLowerCase()
     .split(/\s+/)
     .map(w => w ? w[0].toUpperCase() + w.slice(1) : '')
     .join(' ');
-}
+}*/
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("active");
@@ -105,7 +105,8 @@ function handleForm() {
                 const popupMsg = document.getElementById('popup-msg');
                 const popupClose = document.getElementById('popup-close');
                 
-                popupMsg.textContent = `Thanks ${capitalizeWords({name})}! I'll get back to you shortly.`;
+                //popupMsg.textContent = `Thanks ${capitalizeWords({name})}! I'll get back to you shortly.`;
+                popupMsg.textContent = `Thanks ${name}! I'll get back to you shortly.`;
                 popup.classList.add('show');
 
                 popupClose.addEventListener('click', () => {
