@@ -735,9 +735,10 @@ footer a:hover {
     .contact-info {
         text-align: center;
     }
-    
+
     #contact-form {
-        min-width: 350px;
+        
+        
         width: 100%;
     }
 
@@ -815,6 +816,7 @@ footer a:hover {
     main {
         padding: 2rem 1rem;
         gap: 4rem;
+        max-width: 550px;
     }
     
     #hero {
@@ -857,6 +859,7 @@ footer a:hover {
     
     #contact {
         flex-direction: column;
+        
     }
     
     .project {
@@ -875,6 +878,10 @@ footer a:hover {
 
 @media (max-width: 480px) {
 
+    main{
+        max-width: 350px;
+    }
+
     .logo span{
         font-size: 1.5rem;
     }
@@ -882,6 +889,7 @@ footer a:hover {
     #theme-bar{
        top: 65px;
     }
+    
     .nav{
        display: flex;
        align-items: center;
