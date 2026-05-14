@@ -31,7 +31,6 @@ function initThemeToggle() {
 
         icon.classList.add('switching');
         setTimeout(() => {
-
             document.body.classList.toggle('light-mode');
             const isLight = document.body.classList.contains('light-mode');
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
