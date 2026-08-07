@@ -28,7 +28,7 @@
 
 - Add more skills to the skills section (JSON, API, CRUD, UIX interface).
 
-- Add a dark mode feature to include black background.
+- Add a dark mode feature to include black background or Liquid Glass.
 
 - Add CSS animation CardReveal to the necessary places in the entire website.
 
@@ -41,5 +41,12 @@
 - Add CSS animations to the various buttons.
 
 - Add more elements to the footer, e.g social links images, any other necessary element.
+
+- Update preface to Liquid Glass, where necessary.
+
+- Add CSS animation (.place-card figure img:hover {
+        filter: sepia(0.4) brightness(1.15);
+        transform: scale(1.04);
+    })
 
 - More improvements will be made during the update.
